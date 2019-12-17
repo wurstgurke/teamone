@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'docker-repository.intern.neusta.de/rowanto/docker-java8-mvn-nodejs-npm'
+            image 'hub.docker.com/wurstgurke/teamone'
         }
     }
     environment {
