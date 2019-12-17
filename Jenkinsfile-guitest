@@ -2,7 +2,7 @@ pipeline {
   agent {
     // this image provides everything needed to run Cypress
     docker {
-      image 'wurstgurke/teamone'
+      image 'cypress/base:10'
     }
   }
   environment {
