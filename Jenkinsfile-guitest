@@ -2,7 +2,7 @@ pipeline {
   agent {
     // this image provides everything needed to run Cypress
     docker {
-      image 'cypress/base:10''
+      image 'cypress/base:10'
     }
   }
   environment {
@@ -12,6 +12,7 @@ pipeline {
       stage('build and test') {
         steps {
             dir('testing/cypress'){
+              sh 'npm install cypress'
               sh 'npx cypress run'
           }
         }
