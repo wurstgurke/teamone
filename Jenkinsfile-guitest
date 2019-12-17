@@ -12,8 +12,7 @@ pipeline {
       stage('build and test') {
         steps {
             dir('testing/cypress'){
-              sh 'npm ci'
-              sh 'npm install cypress'
+              sh 'npm install cypress --save-dev'
               sh 'npx cypress run'
           }
         }
