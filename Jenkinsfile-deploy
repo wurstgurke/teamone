@@ -1,0 +1,9 @@
+pipeline {
+    stages {
+        stage('Deploy to tomcat') {
+            steps {
+                echo 'Starting deployment'
+            }
+        }
+    }
+}

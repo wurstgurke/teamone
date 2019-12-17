@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jenkins" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jenkins/jenkins-data/caches/git-9c4dd948ed180fda7bc2dcedccddf731" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jenkins/jenkins-data/caches/git-b6741f8c741b8b2a08d51fa01676f9cc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jenkins/jenkins-data/workspace/cypresstest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jenkins/jenkins-data/workspace/pipeline team one" vcs="Git" />
+  </component>
+</project>
