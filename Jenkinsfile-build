@@ -1,0 +1,19 @@
+pipeline {
+    agent {
+        docker {
+            image 'docker-repository.intern.neusta.de/rowanto/docker-java8-mvn-nodejs-npm'
+        }
+    }
+    environment {
+        HOME="${env.WORKSPACE}"
+    }
+    stages {
+        stage('Build Backend') {
+            steps {
+                dir('backend'){
+                    sh 'mvn clean install'
+                }
+            }
+        }
+    }
+}
