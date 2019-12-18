@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6c18016-4ec7-4f38-8a91-0cbe82eca55f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/testing/cypress/cypress/integration/teamonetest.spec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jenkins" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jenkins/jenkins-data/.owner" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins/jenkins-data/.owner" afterDir="false" />
@@ -6683,7 +6682,7 @@
       <change beforePath="$PROJECT_DIR$/jenkins/jenkins-data/workspace/cypresstest/testing/cypress/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins/jenkins-data/workspace/cypresstest/testing/cypress/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jenkins/jenkins-data/workspace/pipeline team one/backend/target/backend.war" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins/jenkins-data/workspace/pipeline team one/backend/target/backend.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jenkins/jenkins-data/workspace/pipeline team one/backend/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins/jenkins-data/workspace/pipeline team one/backend/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/cypress/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing/cypress/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/cypress/cypress/integration/teamonetest.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/testing/cypress/cypress/integration/teamonetest.spec.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -6733,8 +6732,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/testing/cypress/integration/examples/files.spec.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+                <state relative-caret-position="-626">
+                  <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
@@ -6820,8 +6819,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/testing/cypress/cypress/integration/teamonetest.spec.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" column="33" lean-forward="true" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+                <state relative-caret-position="68">
+                  <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
                 </state>
               </provider>
             </entry>
@@ -6962,12 +6961,12 @@
       <workItem from="1576591977403" duration="3100000" />
       <workItem from="1576604392916" duration="516000" />
       <workItem from="1576605136503" duration="8067000" />
-      <workItem from="1576617016761" duration="4182000" />
+      <workItem from="1576617016761" duration="5814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15865000" />
+    <option name="totallyTimeSpent" value="17497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-1467" width="2062" height="1166" extended-state="6" />
@@ -7092,15 +7091,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testing/cypress/integration/examples/files.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        <state relative-caret-position="-626">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testing/cypress/cypress/integration/teamonetest.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="33" lean-forward="true" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+        <state relative-caret-position="68">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
         </state>
       </provider>
     </entry>
