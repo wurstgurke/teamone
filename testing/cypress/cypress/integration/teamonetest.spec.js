@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
-it('should do this', () => {
-    cy.visit('www.devopswiki.de')
+it('should open the backend', () => {
+    cy.visit('http://h2862062.stratoserver.net:80/backend')
 })
-it('should do that', () => {
-    cy.visit('www.google.de')
+it('should open the frontend', () => {
+    cy.visit('http://h2862062.stratoserver.net:80/frontend')
 })
