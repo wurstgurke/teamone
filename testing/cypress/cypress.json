@@ -7,9 +7,5 @@
   "video": true,
   "videosFolder": "reports/videos",
   "screenshotsFolder": "reports/screenshots",
-  "chromeWebSecurity": false,
-  "reporter": "./node_modules/cypress-multi-reporters",
-  "reporterOptions": {
-    "configFile": "reporter.json"
-  }
+  "chromeWebSecurity": false
 }
