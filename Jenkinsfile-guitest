@@ -1,37 +1,36 @@
 pipeline {
-  agent {
-    // this image provides everything needed to run Cypress
-    docker {
-      image 'cypress/base:10'
+    agent {
+        docker {
+            image 'cypress/base:10'
+        }
     }
-  }
-  environment {
-      HOME="${env.WORKSPACE}"
-  }
-  stages {
-      stage('build and test') {
-        steps {
-            dir('testing/cypress'){
-              sh 'npm install'
-              sh 'npm ci'
-              sh 'npx cypress run'
-          }
+    environment {
+        HOME="${env.WORKSPACE}"
+    }
+    stages {
+        stage('build and test') {
+            steps {
+                dir('testing/cypress'){
+                    sh 'npm install'
+                    sh 'npm ci'
+                    sh 'npx cypress run'
+                }
+            }
         }
-      }
-   }
-   post{
-      always{
-        dir('testing/cypress/reports'){
-            sh 'npx mochawesome-merge mochawesom*.* > report.json'
-            sh 'npx mochawesome-report-generator report.json'
-            publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: './mochawesome-report/', reportFiles: 'report.html', reportName: 'Report', reportTitles: ''])
+    }
+    post {
+        always {
+            dir('testing/cypress/reports'){
+                sh 'npx mochawesome-merge mochawesom*.* > report.json'
+                sh 'npx mochawesome-report-generator report.json'
+                publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: './mochawesome-report/', reportFiles: 'report.html', reportName: 'Report', reportTitles: ''])
+            }
         }
-      }
-      success{
-        rocketSend channel: 'general', message: 'Der nächtliche Lauf der Cypress-Tests war erfolgreich. Weitere Details im Report unter '+env.BUILD_URL, rawMessage: true
-      }
-      failure{
-        rocketSend channel: 'general', message: 'Der nächtliche Lauf der Cypress-Tests ist fehlgeschlagen. Weitere Details im Report unter '+env.BUILD_URL, rawMessage: true
-      }
-   }
+        success {
+            rocketSend channel: 'general', message: 'Der nächtliche Lauf der Cypress-Tests war erfolgreich. Weitere Details im Report unter '+env.BUILD_URL, rawMessage: true
+        }
+        failure {
+            rocketSend channel: 'general', message: 'Der nächtliche Lauf der Cypress-Tests ist fehlgeschlagen. Weitere Details im Report unter '+env.BUILD_URL, rawMessage: true
+        }
+    }
 }
