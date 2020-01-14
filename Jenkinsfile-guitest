@@ -11,8 +11,7 @@ pipeline {
         stage('build and test') {
             steps {
                 dir('testing/cypress'){
-                    sh 'npm i'
-                    sh 'npm ci'
+                    sh 'yarn'
                     sh 'npx cypress run'
                 }
             }
