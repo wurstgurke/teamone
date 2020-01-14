@@ -12,7 +12,7 @@ pipeline {
             steps {
                 dir('testing/cypress'){
                     sh 'yarn'
-                    sh 'npx cypress run'
+                    sh 'yarn cypress run'
                 }
             }
         }
