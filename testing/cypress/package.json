@@ -1,12 +1,11 @@
 {
-  "devDependencies": {},
-  "dependencies": {
-    "chai": "^4.2.0",
-    "cypress": "^3.8.2",
+  "devDependencies": {
+    "cypress": "3.7.0",
     "cypress-multi-reporters": "^1.2.3",
     "mocha": "^7.0.0",
     "mochawesome": "^4.1.0",
     "mochawesome-merge": "^4.0.0",
+    "mocha-junit-reporters": "^1.23.6",
     "mochawesome-report-generator": "^4.1.0"
   }
 }
