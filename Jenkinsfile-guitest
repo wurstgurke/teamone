@@ -12,6 +12,7 @@ pipeline {
             steps {
                 dir('testing/cypress'){
                     sh 'yarn'
+                    sh 'unset DISPLAY'
                     sh 'yarn cypress run'
                 }
             }
@@ -24,5 +25,13 @@ pipeline {
         failure {
             rocketSend channel: 'general', message: 'Der nächtliche Lauf der Cypress-Tests ist fehlgeschlagen. Weitere Details im Report unter '+env.BUILD_URL, rawMessage: true
         }
+        always {
+            dir('testing/cypress/reports'){
+                sh 'npx mochawesome-merge mochawesom*.* > report.json'
+                sh 'npx mochawesome-report-generator report.json'
+                publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: './mochawesome-report/', reportFiles: 'report.html', reportName: 'Report', reportTitles: ''])
+            }
+        }
     }
 }
+unset DISPLAY
