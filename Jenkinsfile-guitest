@@ -12,6 +12,8 @@ pipeline {
             steps {
                 dir('testing/cypress'){
                     sh 'yarn'
+                    sh 'npx cypress cache clear'
+                    sh 'npx cypress install'
                     sh 'npx cypress run'
                 }
             }
