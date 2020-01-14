@@ -60,6 +60,7 @@
     "@bahmutov/print-env": "1.2.0",
     "colon-names": "1.0.0",
     "cypress": "3.8.0",
+    "cypress-multi-reporters": "^1.2.3",
     "eslint": "5.16.0",
     "eslint-plugin-cypress": "2.7.0",
     "eslint-plugin-cypress-dev": "2.1.0",
@@ -70,7 +71,12 @@
     "stop-build": "1.1.0",
     "stop-only": "3.1.0",
     "typescript": "3.7.2",
-    "yaml-lint": "1.2.4"
+    "yaml-lint": "1.2.4",
+    "mocha": "^7.0.0",
+    "mochawesome": "^4.1.0",
+    "mochawesome-merge": "^4.0.0",
+    "mocha-junit-reporters": "^1.23.6",
+    "mochawesome-report-generator": "^4.1.0"
   },
   "engines": {
     "node": ">=4"

@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-01-14T09:07:19.179Z",
+    "end": "2020-01-14T09:07:22.531Z",
+    "duration": 3352,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ae2c309b-38f3-4f6f-a32d-13e993c0064c",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "should open the backend",
+          "fullTitle": " should open the backend",
+          "timedOut": null,
+          "duration": 359,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('http://h2862062.stratoserver.net:80/backend');",
+          "err": {},
+          "uuid": "04d32c6b-c6fd-4ed2-8cc1-5391a7cd1eb0",
+          "parentUUID": "ae2c309b-38f3-4f6f-a32d-13e993c0064c",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "should open the frontend",
+          "fullTitle": " should open the frontend",
+          "timedOut": null,
+          "duration": 590,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('http://h2862062.stratoserver.net:80/frontend');",
+          "err": {
+            "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://h2862062.stratoserver.net/frontend\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not '2xx'.\n\nIf you do not want status codes to cause failures pass the option: 'failOnStatusCode: false'",
+            "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://h2862062.stratoserver.net/frontend\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not '2xx'.\n\nIf you do not want status codes to cause failures pass the option: 'failOnStatusCode: false'\n    at Object.cypressErr (http://h2862062.stratoserver.net/__cypress/runner/cypress_runner.js:106136:11)\n    at Object.throwErr (http://h2862062.stratoserver.net/__cypress/runner/cypress_runner.js:106091:18)\n    at Object.throwErrByPath (http://h2862062.stratoserver.net/__cypress/runner/cypress_runner.js:106123:17)\n    at http://h2862062.stratoserver.net/__cypress/runner/cypress_runner.js:91460:31\n    at visitFailedByErr (http://h2862062.stratoserver.net/__cypress/runner/cypress_runner.js:90973:12)\n    at http://h2862062.stratoserver.net/__cypress/runner/cypress_runner.js:91441:22\n    at tryCatcher (http://h2862062.stratoserver.net/__cypress/runner/cypress_runner.js:140400:23)\n    at Promise._settlePromiseFromHandler (http://h2862062.stratoserver.net/__cypress/runner/cypress_runner.js:138336:31)\n    at Promise._settlePromise (http://h2862062.stratoserver.net/__cypress/runner/cypress_runner.js:138393:18)\n    at Promise._settlePromise0 (http://h2862062.stratoserver.net/__cypress/runner/cypress_runner.js:138438:10)\n    at Promise._settlePromises (http://h2862062.stratoserver.net/__cypress/runner/cypress_runner.js:138513:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://h2862062.stratoserver.net/__cypress/runner/cypress_runner.js:135125:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://h2862062.stratoserver.net/__cypress/runner/cypress_runner.js:135135:10)\n    at Async.drainQueues (http://h2862062.stratoserver.net/__cypress/runner/cypress_runner.js:135009:14)",
+            "diff": null
+          },
+          "uuid": "a250bc72-4929-45f2-87ea-fed0976a78fc",
+          "parentUUID": "ae2c309b-38f3-4f6f-a32d-13e993c0064c",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "04d32c6b-c6fd-4ed2-8cc1-5391a7cd1eb0"
+      ],
+      "failures": [
+        "a250bc72-4929-45f2-87ea-fed0976a78fc"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 949,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
