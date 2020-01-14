@@ -12,7 +12,6 @@ pipeline {
             steps {
                 dir('testing/cypress'){
                     sh 'npm install'
-                    sh 'npm ci'
                     sh 'npx cypress run'
                 }
             }
