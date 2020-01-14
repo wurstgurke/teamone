@@ -2,6 +2,8 @@
   "fileServerFolder": ".",
   "fixturesFolder": "./fixtures",
   "integrationFolder": "./integration",
+  "pluginsFile": "./plugins/index",
+  "supportFile": "./support/index",
   "video": true,
   "videosFolder": "reports/videos",
   "screenshotsFolder": "reports/screenshots",
